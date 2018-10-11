@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+</head>
+<body>
+	<!-- 사용자의 입력을 받아서 서버에게 전송하기 위한 개체가
+	form 입니다. 
+	action은 처리할 서버의 URL인데 생략하면 현재 URL이 됩니다.
+	method 는 요청 방식입니다. 보통은 get, post 둘 중 하나-->
+	<h3 align="center">회원가입</h3>
+	<form action="register" method="post">
+		<table border="1" align="center"
+			cellpadding="5">
+			<tr>
+				<td align="right">
+					<label for="email">이메일</label>
+				</td>
+				<td>
+					<input type="email"
+					id="email" name="email" />
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="pw">비밀번호</label>
+				</td>
+				<td>
+					<input type="password"
+					id="pw" name="pw" />
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="name">이름</label>
+				</td>
+				<td>
+					<input type="text"
+					id="name" name="name" />
+				</td>
+			</tr>	
+			<tr>
+				<td colspan="2">
+					<fieldset>
+						<legend>성별</legend>
+						<input type="radio"
+						name="gender" value="man"
+						checked="checked" />남자
+						<input type="radio"
+						name="gender" value="woman"
+						/>여자
+					</fieldset>
+				</td>
+			</tr>	
+			
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit"
+					value="회원가입" />
+				</td>
+			</tr>			
+		</table>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
